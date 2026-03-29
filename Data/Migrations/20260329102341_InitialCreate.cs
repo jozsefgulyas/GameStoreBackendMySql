@@ -28,7 +28,8 @@ namespace GameStore.Api.Data.Migrations
                     Email = table.Column<string>(type: "longtext", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     DateOfBirth = table.Column<DateOnly>(type: "date", nullable: false),
-                    CopiesPurchased = table.Column<int>(type: "int", nullable: false)
+                    Address = table.Column<string>(type: "longtext", nullable: false)
+                        .Annotation("MySql:CharSet", "utf8mb4")
                 },
                 constraints: table =>
                 {
@@ -48,6 +49,24 @@ namespace GameStore.Api.Data.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Genres", x => x.Id);
+                })
+                .Annotation("MySql:CharSet", "utf8mb4");
+
+            migrationBuilder.CreateTable(
+                name: "Orders",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
+                    CustomerId = table.Column<int>(type: "int", nullable: false),
+                    GameId = table.Column<int>(type: "int", nullable: false),
+                    PurchaseDate = table.Column<DateTime>(type: "datetime(6)", nullable: false),
+                    Quantity = table.Column<int>(type: "int", nullable: false),
+                    IsOrderComplete = table.Column<bool>(type: "tinyint(1)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Orders", x => x.Id);
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
 
@@ -101,6 +120,9 @@ namespace GameStore.Api.Data.Migrations
 
             migrationBuilder.DropTable(
                 name: "Games");
+
+            migrationBuilder.DropTable(
+                name: "Orders");
 
             migrationBuilder.DropTable(
                 name: "Genres");

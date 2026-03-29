@@ -5,4 +5,4 @@ public record class CustomerSummaryDto(
     string Name, 
     string Email,
     DateOnly DateOfBirth,
-    int CopiesPurchased);
+    string Address);

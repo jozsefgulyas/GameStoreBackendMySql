@@ -13,6 +13,7 @@ var app = builder.Build();
 app.MapGamesEndpoints();
 app.MapGenresEndpoints();
 app.MapCustomersEndpoints();
+app.MapOrdersEndpoints();
 
 await app.MigrateDbAsync();
 

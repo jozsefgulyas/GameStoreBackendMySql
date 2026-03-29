@@ -6,5 +6,5 @@ public record class UpdateCustomerDto(
     [Required][StringLength(50)] string Name,
     [Required][EmailAddress] string Email,
     DateOnly DateOfBirth,
-    int CopiesPurchased
+    string Address
 );

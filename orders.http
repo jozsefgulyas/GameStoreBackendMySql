@@ -1,0 +1,31 @@
+GET http://localhost:5274/orders
+
+###
+GET http://localhost:5274/orders/1
+
+###
+POST http://localhost:5274/orders
+Content-Type: application/json
+
+{
+    "customerId": 1,
+    "gameId": 2,
+    "purchaseDate": "2024-06-01",
+    "quantity": 1,
+    "isOrderComplete": false
+}
+
+###
+PUT http://localhost:5274/orders/3
+Content-Type: application/json
+
+{
+    "customerId": 2,
+    "gameId": 3,
+    "purchaseDate": "2024-06-02",
+    "quantity": 2,
+    "isOrderComplete": true
+}
+
+###
+DELETE http://localhost:5274/orders/8
