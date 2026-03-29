@@ -10,11 +10,13 @@ builder.Services.AddDbContext<GameStoreContext>(options =>
 
 var app = builder.Build();
 
+await app.MigrateDbAsync();
+
 app.MapGamesEndpoints();
 app.MapGenresEndpoints();
 app.MapCustomersEndpoints();
 app.MapOrdersEndpoints();
 
-await app.MigrateDbAsync();
+
 
 app.Run();
