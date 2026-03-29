@@ -2358,23 +2358,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gjozsef.SZIKSZI\\.nuget\\packages\\": {},
+    "C:\\Users\\jozse\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gjozsef.SZIKSZI\\GameStore.Api\\GameStore.Api.csproj",
+      "projectUniqueName": "C:\\Users\\jozse\\GameStoreBackendMySql\\GameStore.Api.csproj",
       "projectName": "GameStore.Api",
-      "projectPath": "C:\\Users\\gjozsef.SZIKSZI\\GameStore.Api\\GameStore.Api.csproj",
-      "packagesPath": "C:\\Users\\gjozsef.SZIKSZI\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gjozsef.SZIKSZI\\GameStore.Api\\obj\\",
+      "projectPath": "C:\\Users\\jozse\\GameStoreBackendMySql\\GameStore.Api.csproj",
+      "packagesPath": "C:\\Users\\jozse\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jozse\\GameStoreBackendMySql\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\gjozsef.SZIKSZI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jozse\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2383,7 +2383,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2442,7 +2441,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.310/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
