@@ -12,7 +12,7 @@ public static class CustomerMapping
             Name = customer.Name,
             Email = customer.Email,
             DateOfBirth = customer.DateOfBirth,
-            CopiesPurchased = customer.CopiesPurchased
+            Address = customer.Address
         };
     }
 
@@ -24,7 +24,7 @@ public static class CustomerMapping
             Name = customer.Name,
             Email = customer.Email,
             DateOfBirth = customer.DateOfBirth,
-            CopiesPurchased = customer.CopiesPurchased
+            Address = customer.Address
         };
     }    
 
@@ -36,7 +36,7 @@ public static class CustomerMapping
             customer.Name,
             customer.Email,
             customer.DateOfBirth,
-            customer.CopiesPurchased
+            customer.Address
         );
     }
 
@@ -47,7 +47,7 @@ public static class CustomerMapping
             customer.Name,
             customer.Email,
             customer.DateOfBirth,
-            customer.CopiesPurchased
+            customer.Address
         );
     }    
 }

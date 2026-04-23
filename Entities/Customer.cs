@@ -10,5 +10,5 @@ public class Customer
 
     public DateOnly DateOfBirth { get; set; }
 
-    public int CopiesPurchased { get; set; }
+    public required string Address { get; set; }
 }

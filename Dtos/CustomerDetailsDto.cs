@@ -5,4 +5,4 @@ public record class CustomerDetailsDto(
     string Name, 
     string Email,
     DateOnly DateOfBirth,
-    int CopiesPurchased);
+    string Address);

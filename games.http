@@ -1,4 +1,4 @@
-GET http://localhost:5274/customers
+GET http://localhost:5274/games
 
 ###
 GET http://localhost:5274/games/1
@@ -9,21 +9,21 @@ Content-Type: application/json
 
 {
     "name": "Final Fantasy XV",
-    "genreId": 2,
+    "genreId": 1,
     "price": 59.99,
     "releaseDate": "2010-09-30"
 }
 
 ###
-PUT http://localhost:5274/games/3
+PUT http://localhost:5274/games/31
 Content-Type: application/json
 
 {
-    "name": "Street Fighter II Turbo",
+    "name": "Final Fantasy XV",
     "genreId": 1,
     "price": 19.99,
-    "releaseDate": "1991-02-01"
+    "releaseDate": "2010-09-30"
 }
 
 ###
-DELETE http://localhost:5274/games/8
+DELETE http://localhost:5274/games/33

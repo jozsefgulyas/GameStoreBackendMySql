@@ -6,5 +6,5 @@ public record class CreateCustomerDto(
     [Required][StringLength(50)] string Name,
     [Required][EmailAddress] string Email,
     DateOnly DateOfBirth,
-    int CopiesPurchased
+    [Required][StringLength(100)] string Address
 );

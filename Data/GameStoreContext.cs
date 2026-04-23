@@ -10,15 +10,21 @@ public class GameStoreContext(DbContextOptions<GameStoreContext> options)
 
     public DbSet<Genre> Genres => Set<Genre>();
     public DbSet<Customer> Customers => Set<Customer>();
+    public DbSet<Order> Orders => Set<Order>();
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Genre>().HasData(
-            new { Id = 1, Name = "Fighting" },
-            new { Id = 2, Name = "Roleplaying" },
-            new { Id = 3, Name = "Sports" },
-            new { Id = 4, Name = "Racing" },
-            new { Id = 5, Name = "Kids and Family" }
+            new { Id = 1, Name = "Role-Playing Game (RPG)" },
+            new { Id = 2, Name = "Action-Adventure" },
+            new { Id = 3, Name = "Sandbox / Survival" },
+            new { Id = 4, Name = "First-Person Shooter (FPS)" },
+            new { Id = 5, Name = "Strategy" },
+            new { Id = 6, Name = "Racing / Simulation" },
+            new { Id = 7, Name = "Platformer / Indie" },
+            new { Id = 8, Name = "Life Simulation" },
+            new { Id = 9, Name = "Puzzle / Cooperative" },
+            new { Id = 10, Name = "Horror" }
         );
     }
 }
